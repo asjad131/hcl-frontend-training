@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+
+  <body bgcolor="Lightblue">
+    <br />
+    <br />
+    <form>
+      <label>First Name: </label>
+      <input type="text" name="firstname" size="15" />
+      <label>Last Name: </label>
+      <input type="text" name="lastname" size="15" />
+      <br />
+      <br />
+
+      <label for="dob">Date of Birth: </label>
+      <input type="date" id="dob" name="dob" required />
+      <br />
+      <br />
+
+      <label> Gender: </label>
+      <input type="radio" name="male" /> Male
+      <input type="radio" name="female" /> Female
+      <input type="radio" name="other" /> Other
+      <br />
+      <br />
+      <label> Course: </label>
+      <select>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="MBA">MBA</option>
+        <option value="MCA">MCA</option>
+        <option value="M.Tech">M.Tech</option>
+      </select>
+      <br />
+      <br />
+      <p>Kindly Select your favourite sports:</p>
+      <input type="checkbox" name="sport1" value="cricket" />Cricket<br />
+      <input type="checkbox" name="sport2" value="tennis" />Tennis<br />
+      <input type="checkbox" name="sport3" value="football" />Football<br />
+      <input type="checkbox" name="sport4" value="baseball" />Baseball<br />
+      <input
+        type="checkbox"
+        name="sport5"
+        value="badminton"
+      />Badminton<br /><br />
+
+      <label>
+        Select the meeting schedule: <br /><br />
+        Select Date And Time:
+        <input type="datetime-local" name="meetingdate" /> <br /><br />
+      </label>
+
+      <label>Enter your website URL: </label>
+      <input
+        type="url"
+        name="website"
+        placeholder="http://example.com"
+      /><br /><br />
+
+      <label> Address:</label>
+      <br /><br />
+      <textarea cols="80" rows="5" value="address"> </textarea>
+      <br /><br />
+
+      <label> Phone:</label>
+      <input type="text" name="country code" value="+91" size="2" />
+      <input type="text" name="phone" size="10" /> <br />
+      <br />
+      <br />
+
+      <label>Email:</label>
+      <input type="email" id="email" name="email" /> <br />
+      <br />
+      <br />
+
+      <label>Password:</label>
+      <input type="Password" id="pass" name="pass" /> <br />
+      <br />
+      <br />
+
+      <label>ReType Password:</label>
+      <input type="Password" id="repass" name="repass" /> <br />
+      <br />
+      <br />
+
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required />
+      <br />
+      <br />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
