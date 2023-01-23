@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asjad Pygamy Mohammad</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2{
+        text-align: center;
+      }
+      /* Style the header */
+      .header {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+        font-size: 24px;
+      }
+    .row{
+        padding: 10px;
+        border: 10px;
+    }
+      /* Left and right column */
+      .column.left {
+        width: 25%;
+        float:left;
+        padding: 5px;
+        border: 5px;
+        text-align: center;
+      }
+      .column.right {
+        width: 75%;
+        float:left;
+        padding: 5px;
+        border: 5px;
+      }
+    
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the footer */
+      .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+      .column.left > img{
+        float:left;
+        max-width: 75% ;
+        max-height: 75% ;
+        border-radius: 50%;
+      }
+      ul.disc {
+        list-style-type: disc;
+      }
+      p,ul{
+        font-size: 14px;
+      }
+      ul.square {
+        list-style-type: square;
+      }
+      table, th, td {
+        border: 1px solid;
+        font-size: 14px;
+      }
+      /*links style */
+      a:link , a:active{
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      a:visited {
+        color: lightblue;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: green;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Personal Profile using HTML and CSS</h2>
+
+    <div class="header">
+      <h3>Asjad Pygamy Mohammad</h3>
+    </div>
+
+    <div class="row">
+      <div class="column left" >
+           <img src="img_avatar.png" alt="My Photo">
+      </div>
+      <div class="column right" >
+        <p><b>About Me:</b></p>
+            <p>I am an IT professional with 13 years of experience. I have worked in various roles and technologies.
+                Currently I work as a Salesforce Consultant. 
+                I have worked in Accenture, Infosys previously and now I work in HCL. I joined HCL in August,2022. 
+                I ahve joined this course to learn front end technology and gain more knowledge in Javascript.
+                I currently live in Hyderabad.
+            </p>
+        <p><b>My Skills:</b></p>
+        <p>
+            <ul class="disc">
+                <li>Amdocs CRM</li>
+                <li>Salesforce CRM</li>
+                <li>PL/SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+        </p>
+        <p><b>Personal Info:</b></p>
+            <table>
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td>8th April,1988</td>
+                </tr>
+                <tr>
+                    <td>Languages Known</td>
+                    <td>English, Hindi, Telugu, Urdu</td>
+                </tr>
+                <tr>
+                  <td>Mobile Number</td>
+                  <td>+91-9908528418</td>
+              </tr>
+            </table>
+        <p><b>My Hobbies:</b></p>
+        <p>
+            <ul class="square">
+                <li>Reading Books</li>
+                <li>Playing Cricket</li>
+                <li>Watching Movies</li>
+            </ul>
+        </p>
+        <p><b>Connect with me @:</b></p>
+        <p>
+            <a href="https://www.linkedin.com/in/mohammad-asjad-bb72a315/" target="_blank">LinkedIn</a>
+            <a href="https://www.twitter.com/asjad131" target="_blank">Twitter</a>
+            <a href="https://www.facedbook.com/asjad.mohammad" target="_blank">Facebook</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p><h6>&copy; Asjad Pygamy Mohammad</h6></p>
+    </div>
+  </body>
+</html>
