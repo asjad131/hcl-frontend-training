@@ -1,0 +1,111 @@
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Garamond, serif;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      h3 {
+        font-family: Helvetica, sans-serif;
+        /*font-size: 46px;  */
+      }
+
+    .row{
+        padding: 10px;
+        border: 10px;
+        background-color:rgb(184, 169, 190);
+        display: flex;
+        justify-content: center;
+    }
+      /* Left and right column */
+      .column.left {
+        width: 25%;
+        /*float:left;*/
+        padding: 5px;
+        border: 5px;
+        text-align: center; 
+        display: inline-block; 
+        vertical-align: middle;     
+      }
+      .column.left > img{
+        float:left;
+        text-align:center;
+        max-width: 75% ;
+        max-height:75% ;
+        border-radius: 50%;
+      }
+      .column.left > h3{
+        float:left;
+        text-align:center;
+        margin: 10px;
+      }
+      .column.left > h5{
+        float:left;
+        text-align:center;
+        margin: 20px;
+      }
+      .column.right {
+        width: 75%;
+        /*float:left;*/
+        padding: 5px;
+        border: 5px;
+        display: inline-block; 
+        vertical-align: middle;  
+      }
+    
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the footer */
+      .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+
+      ul.disc {
+        list-style-type: disc;
+      }
+      p,ul{
+        font-size: 14px;
+      }
+      ul.square {
+        list-style-type: square;
+      }
+      table, th, td {
+        border: 1px solid;
+        font-size: 14px;
+        border-collapse: collapse;
+        border-style: ridge;
+      }
+      /*links style */
+      a:link {
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      a:visited {
+        color: lightblue;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:active{
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      a:hover {
+        color: green;
+        background-color: transparent;
+        text-decoration: underline;
+      }
