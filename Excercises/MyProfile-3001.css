@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(88, 209, 233);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 500px;
+}
+
+/* Left and right column */
+.column.left {
+  width: 25%;
+}
+
+/* Middle column */
+.column.right {
+  width: 75%;
+}
+.content.right, .content.left {
+  border: 2px solid;
+  border-color: aqua;
+  border-radius: 5%;
+  /*border-bottom-right-radius: 5%;*/
+  width: 40%;
+  height: 40%;
+  float:left;
+  margin:2%;
+}
+.content p,ul {
+  font-style: italic;
+}
+.content.left ul.disc {
+  list-style-type: disc;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  overflow: hidden;
+  background-color: rgb(88, 209, 233);
+  padding: 10px;
+  text-align: center;
+}
